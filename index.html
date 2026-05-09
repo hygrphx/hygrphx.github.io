@@ -1,0 +1,258 @@
+<html>
+<head>
+<title>HYGRPHX Graphic Design</title>
+<style>
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+.main-box {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border: 1px solid #dddddd;
+  padding: 30px 25px;
+  box-shadow: 5px 5px 15px #cccccc;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.profile-pic {
+  width: 200px;
+  height: 200px;
+
+}
+/* fallback for missing image */
+.profile-pic-fallback {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+h1 {
+  font-size: 65px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+}
+.subhead {
+  color: #444444;
+  text-transform: uppercase;
+  font-size: 25px;
+  border-top: 1px solid #aaaaaa;
+  padding-top: 5px;
+}
+.quote-box {
+  background: #f5f5f5;
+  padding: 15px 25px;
+  margin: 20px 0;
+  border-left: 5px solid black;
+}
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 25px 0;
+}
+.info-box {
+  border: 1px solid #cccccc;
+  padding: 20px;
+}
+.info-box h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+.info-box ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.info-box li {
+  margin-bottom: 8px;
+  border-left: 2px solid #cccccc;
+  padding-left: 10px;
+}
+.behance-box {
+  background: #f0f0f0;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  margin: 20px 0;
+  word-wrap: break-word;
+}
+.behance-box a {
+  color: black;
+}
+.facebook-box {
+  border: 1px solid black;
+  padding: 15px 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.fb-button {
+  border: 1px solid black;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: black;
+  background: white;
+}
+.fb-button:hover {
+  background: #eeeeee;
+}
+.footer {
+  text-align: right;
+  color: #666666;
+  border-top: 1px solid #eeeeee;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.note {
+  font-size: 11px;
+  color: #999999;
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="main-box">
+
+  <!-- HEADER SECTION with profile picture - FIXED VERSION -->
+  <div class="header">
+    <!-- OPTION 1: Use this if your image is in the same folder as the HTML file -->
+    <img src="hygrphx.jpg" alt="HYGRPHX profile" class="profile-pic" onerror="this.style.display='none'; document.getElementById('fallback-img').style.display='flex';">
+    
+    <!-- OPTION 2: Fallback text logo if image doesn't load -->
+    <div id="fallback-img" class="profile-pic-fallback" style="display: none;">H</div>
+    
+    <div>
+      <h1>HYGRPHX</h1>
+      <div class="subhead">Graphic Design •</div>
+    </div>
+  </div>
+
+  <!-- small script to handle image loading -->
+  <script>
+    // This checks if the image loaded properly
+    var img = document.querySelector('.profile-pic');
+    if (img) {
+      if (img.complete && img.naturalHeight === 0) {
+        // Image failed to load
+        img.style.display = 'none';
+        document.getElementById('fallback-img').style.display = 'flex';
+      }
+    }
+  </script>
+
+
+
+  <!-- ABOUT ME -->
+  <div class="quote-box">
+    <strong>Dave Wilson Elvambuena</strong> — "A creative Freelance Graphic Designer with 5 years of experience specializing in brand identity, print, and digital media. Adept at translating client visions into compelling visual narratives that drive engagement and strengthen brand recognition.".
+  </div>
+
+
+<img src="urbanmunchies.jpg" style="width: 330.2px; height: auto;" alt="description"> 
+<img src="kalayaan.jpg" style="width: 330.2px; height: auto;" alt="description">
+<img src="57thanniv.png" style="width: 330.2px; height: auto;" alt="description">
+
+
+
+
+
+  <!--TWO COLUMN LAYOUT -->
+  <div class="two-columns">
+
+    <!-- rofile info -->
+    <div class="info-box">
+      <h2>Profile</h2>
+      <p><strong>Graphic Designer</strong> based in San Leonardo, Philippines.</p>
+      <p>Focus: branding, logo design, visual identity.</p>
+      <p>Tools: GIMP, Inkscape, Affinity.</p>
+      <p style="color:#333;">▸ 213 followers · 13 following</p>
+      <p>“My random freelance Graphic Design” — featured on Behance.</p>
+    </div>
+
+    <!-- disciplines -->
+    <div class="info-box">
+      <h2>Disciplines</h2>
+      <ul>
+        <li><strong>Graphic Design</strong> — print & digital</li>
+        <li><strong>Branding</strong> — visual systems</li>
+        <li><strong>Logo Design</strong> — symbolic marks</li>
+        <li><strong>GIMP · Inkscape · Affinity</strong></li>
+      </ul>
+    </div>
+  </div>
+
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fhygrphx%2Fposts%2Fpfbid0Sub9fJfZB5duTYy4eAaxBw37Rsrvv6mdnn1pqPEeU2trsR48ryD55EaQq3hm16Rkl&show_text=true&width=500" width="497" height="599" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fhygrphx%2Fposts%2Fpfbid02YVPyeECGCMGFxsneGaR4yQjhjnf6mJt4FsMk1zFf7qFjtf4yPEyK2wBDX6iB1AmKl&show_text=true&width=500" width="497" height="599" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+
+<img src="hygrphxshirts.jpg" style="width: 1000px; height: auto;" alt="description">
+
+
+
+
+  <div class="behance-box">
+    <strong>📁 Featured project:</strong><br>
+    <a href="https://www.behance.net/gallery/240190921/My-random-freelance-Graphic-Design" target="_blank">
+      behance.net/gallery/240190921/My-random-freelance-Graphic-Design
+    </a><br>
+    <span style="font-size:14px; color:#555;">"My random freelance Graphic Design" — Dave Wilson Elvambuena</span>
+  </div>
+
+<iframe src="https://www.behance.net/embed/project/240190921?ilo0=1" height="1080" width="1000" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+
+  <!-- FACEBOOK LINK -->
+  <div class="facebook-box">
+    <span><strong>ⓕ</strong> facebook.com/hygrphx</span>
+    <a href="https://www.facebook.com/hygrphx" target="_blank" class="fb-button">visit page →</a>
+  </div>
+
+  <div class="footer">
+    <strong>HYGRPHX</strong> — Since · 2026
+  </div>
+
+  <div class="note">
+    dave wilson elvambuena • el dabo
+  </div>
+
+
+  <div style="margin-top: 20px; padding: 10px; background: #ffffcc; border: 1px solid #cccc00; font-size: 12px;">
+    <strong>INTERESTED?</strong><br>
+    Make sure to:<br>
+    Visit our Facebook page<br>
+    Send us a message<br>
+    Provide your information<br>
+    Well get back to you ASAP<br>
+    <strong>DISCOUNT:</strong> get discount when you refer hygrphx
+  </div>
+
+</div>
+
+</body>
+</html>
